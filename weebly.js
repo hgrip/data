@@ -1,4 +1,5 @@
-document.getElementsByTagName('body')[0].innerHTML = '';
+document.getElementsByTagName('body')[0].innerHTML = '<header class="p-1 bg-success text-center"> <div class="text-white" id="title"/> <p class="container text-white">Our URL shortener makes it easy to create custom, branded links that are perfect for sharing on social media, in emails, and more. Track clicks, analyze your audience, and get valuable insights into your content&#39;s performance. Try it now for free!</p> <nav aria-label="Page navigation"> <ul class="pagination justify-content-center" id="pagination"> </ul> </nav> </header> <div class="container" id="doc"> </div> <footer class="text-center mt-5"> </footer>';
+document.getElementsByTagName('body')[0].classList.add("bg-dark text-light");
 names = capitalizeFirstLetter(window.location.hostname.split('.')[0]);
 if( typeof window.location.href.split('?')[1] !== 'undefined' && window.location.href.split('?')[1] !== '' && window.location.href.split('?')[1].includes('page=') === false ){
 _0x525071 = window.location.search.split('?')
